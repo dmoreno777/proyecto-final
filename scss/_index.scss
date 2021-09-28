@@ -1,0 +1,203 @@
+  /*Carousel*/   
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    margin-top: 66px;
+    object-fit: cover;
+    }
+    .carousel-item {
+      transition: transform 1s ease, opacity .5s ease-out;
+  }
+  #beneficios {
+    background-color: #400040;
+    padding: 30px 300px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   #titulo1 {
+     text-align: center;
+     font-size: 200%;
+     color: aliceblue;
+   }
+   
+   #subtitulo1 {
+     color: #A47316;
+     font-size: 120%;
+     text-align: center;
+   }
+   
+   #screenBeneficios {
+     padding: 80px 0px ;
+     background-color: #D9D9D9;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     z-index: 1;
+     
+   }
+   .beneIconos {
+     width: 160px;
+     height: 160px;
+       display: flex;
+     align-items: center;
+   
+   }
+   #soporte {
+    width: 115px ;
+   height: 160px;
+   }
+   
+   .beneTitulos {
+     color: #400040;
+     font-size: 18px;
+     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     text-align: center;
+     padding-top: 20px;
+   }
+   .parrafo-beneficios {
+     padding-top: 50px;
+     padding-bottom: 50px;
+     text-align: center;
+     font-family: 'Roboto', sans-serif;
+     font-size: 22px;
+     color: $letra-morada;
+     background-image: url(https://reivenapps.files.wordpress.com/2021/09/4907157.jpg);
+     text-shadow: 0.5px 2px #313131;
+   } 
+   
+   
+    /*Flexbox Footer*/
+  footer {
+    color: #FFFFFE;
+    background-color: #400040;
+    }
+   
+   
+   .footer__container{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     height: 450px;
+   }
+   
+   .footer__container-col1 {
+    width: 300px;
+    margin: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    
+  
+    h2 {
+      font-size: 22px;
+      text-align: center;
+    }
+    /* ICONOS SOCIALES */
+    /*MAP*/
+    $redes: (
+    facebook: #087AE9,
+    instagram: #C52B71,
+    twitter: rgb(0, 204, 255),
+    ); 
+    /*EACH*/
+    @each $red, $color in $redes {
+    .btn-#{$red}{
+      background-color: $color;
+      border-radius: 4px;
+     }
+      }
+ 
+    .col-redes {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        img {
+          width: 36px;
+          height: 36px; 
+          margin: 10px 2px;
+        } 
+      }
+      .text-redes{   
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        label {
+          text-align: left;
+          text-justify: distribute;
+          color: #C7C7C7;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+   
+  .footer__container-col2 {
+    max-width: 400px;
+    margin: 40px 10px;
+  
+    h2 {
+      font-size: 22px;
+    }
+    .mapa {
+      padding: 5px 5px 0px 5px;
+      border: solid 4px #FFC90E;
+      
+      iframe {
+      box-sizing: border-box; 
+      }
+    }
+  }
+    
+  .footer__container-col3 {
+    
+    margin: 40px 10px;
+    
+  
+    h2 {
+      font-size: 22px;
+     
+    }
+  }
+   
+  .row2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+       display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
+  
+    img {
+      width: 36px;
+      height: 36px;
+    }
+  
+    label {
+     font-size: 14px;
+    }
+  }
+    
+   .footer__down {
+     width: 100%;
+     background: $negro;
+     display: flex;
+     justify-content: space-between; 
+     padding: 8px 20px;   
+   }
+    
+   .footer__down-copyright a{
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+   }
+   
+   .footer__down-information a{
+     text-decoration: none;
+     color: #C7C7C7;
+   }

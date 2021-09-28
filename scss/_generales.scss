@@ -1,0 +1,133 @@
+* {
+    padding: 0px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    }
+  
+    body {
+     display: flex;
+     flex-direction: column;
+     }
+     header {
+      background-color: #FFFFFE; 
+      margin: 0rem;
+      width: 100%;
+      position:fixed; 
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      align-items: center;
+      box-shadow: 1px 1px 4px #000;
+      z-index: 2;
+         }
+    
+  .logo {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  .caja-nav {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .main-nav {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .main-nav__item {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #591A75;
+    margin: 0;
+  
+    a {
+      color: #591A75;
+      border-radius: 2px;
+      text-decoration: none;
+      padding: 2px;
+      margin-inline: 18px;
+  
+      &:hover {
+        color: #FFC90E;
+      }
+  
+      &:active {
+        color: blueviolet;
+      }
+    }
+  }
+  
+  .submenu {
+    position: absolute;
+    display: none;
+  
+    li {
+      display: block;
+      margin: 8px 0 8px 22px;
+      border: none;
+      background-color: white;
+    }
+  }
+  
+  ul li:hover ul {
+    display:block;
+  }
+  
+  .access-nav {
+    list-style: none;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .access-nav__inicioSesion {
+  background-color: #D9D9D9;
+  padding: 8px 10px;
+  display: flex;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 100%;
+  justify-content: flex-start;
+  border-radius: 5px;
+  border: none;
+  }
+  
+  .access-nav__inicioSesion a {
+    text-decoration: none;
+    color: #4E2072;
+  }
+  
+  .access-nav__inicioSesion a:hover {
+    color: blueviolet;
+   }
+  .access-nav__pruebaGratis {
+  background-color: #DDB300;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 100%;
+  justify-content: flex-start;
+  border-radius: 5px;
+  border: none;
+  }
+  
+  .access-nav__pruebaGratis a {
+    text-decoration: none;
+    color: #FFFFFE;
+  }
+  
+  .access-nav__pruebaGratis a:hover {
+    color: #ABAA00;
+   }
+
+   .breadcrumb {
+     margin-top: 95px;
+   }
