@@ -42,16 +42,7 @@
     letter-spacing: 2px;
     word-spacing: 10px;
     }
-   /* BUCLES */
-
-@for $i from 1 through 6 {
-  .cajas-#{$i} { 
-      width: 8em * $i; 
-      background-color: #800180;
-      border: solid 1px #d6a916;
-      color: white;
-  }
-}
+ 
 
 
 
