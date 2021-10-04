@@ -70,6 +70,8 @@
   footer {
     color: #FFFFFE;
     background-color: #400040;
+    display: flex;
+    flex-direction: column;
     }
    
    
@@ -77,7 +79,7 @@
      display: flex;
      flex-direction: row;
      justify-content: space-around;
-     height: 450px;
+     height: 550px;
    }
    
    .footer__container-col1 {
@@ -102,7 +104,7 @@
     @each $red, $color in $redes {
     .btn-#{$red}{
       background-color: $color;
-      border-radius: 4px;
+      border-radius: 2px;
      }
       }
  
@@ -115,22 +117,26 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        .btn-facebook {
+          margin-bottom: 10px;
+        }
+        .btn-instagram {
+          margin-bottom: 10px;
+        }
         
-        img {
-          width: 36px;
-          height: 36px; 
-          margin: 10px 2px;
-        } 
       }
       .text-redes{   
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-end;
+        
         label {
           text-align: left;
           text-justify: distribute;
           color: #C7C7C7;
           font-size: 18px;
+          margin-bottom: 20px;
+          
         }
       }
     }
@@ -153,34 +159,45 @@
   }
     
   .footer__container-col3 {
-    
     margin: 40px 10px;
     
-  
     h2 {
       font-size: 22px;
+      text-align: center;
      
     }
   }
-   
-  .row2 {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-       display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;    
-  
-    img {
-      width: 36px;
-      height: 36px;
-    }
-  
+.contenedor-contactos {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  .labels-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     label {
-     font-size: 14px;
-    }
+          text-align: left;
+          text-justify: distribute;
+          color: #C7C7C7;
+          font-size: 16px;
+          padding-left: 30px;
   }
+}
+.row2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;    
+
+  img {
+    width: 36px;
+    height: 36px;
+    margin: 10px 2px;
+  }
+}
+}
+  
+
     
    .footer__down {
      width: 100%;
@@ -200,3 +217,4 @@
      text-decoration: none;
      color: #C7C7C7;
    }
+  

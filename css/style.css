@@ -275,6 +275,13 @@ ul li:hover ul {
 footer {
   color: #FFFFFE;
   background-color: #400040;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer__container {
@@ -287,7 +294,7 @@ footer {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 450px;
+  height: 550px;
 }
 
 .footer__container-col1 {
@@ -312,17 +319,17 @@ footer {
 
 .footer__container-col1 .btn-facebook {
   background-color: #087AE9;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .footer__container-col1 .btn-instagram {
   background-color: #C52B71;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .footer__container-col1 .btn-twitter {
   background-color: #00ccff;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .footer__container-col1 .col-redes {
@@ -351,10 +358,12 @@ footer {
       justify-content: space-around;
 }
 
-.footer__container-col1 .col-redes .row img {
-  width: 36px;
-  height: 36px;
-  margin: 10px 2px;
+.footer__container-col1 .col-redes .row .btn-facebook {
+  margin-bottom: 10px;
+}
+
+.footer__container-col1 .col-redes .row .btn-instagram {
+  margin-bottom: 10px;
 }
 
 .footer__container-col1 .col-redes .text-redes {
@@ -365,8 +374,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .footer__container-col1 .col-redes .text-redes label {
@@ -374,6 +384,7 @@ footer {
   text-justify: distribute;
   color: #C7C7C7;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .footer__container-col2 {
@@ -400,12 +411,11 @@ footer {
 
 .footer__container-col3 h2 {
   font-size: 22px;
+  text-align: center;
 }
 
-.row2 {
+.contenedor-contactos {
   margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,21 +423,47 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.row2 img {
+.contenedor-contactos .labels-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contenedor-contactos .labels-column label {
+  text-align: left;
+  text-justify: distribute;
+  color: #C7C7C7;
+  font-size: 16px;
+  padding-left: 30px;
+}
+
+.contenedor-contactos .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contenedor-contactos .row2 img {
   width: 36px;
   height: 36px;
-}
-
-.row2 label {
-  font-size: 14px;
+  margin: 10px 2px;
 }
 
 .footer__down {
