@@ -354,8 +354,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: spacgit statue-around;
+      -ms-flex-pack: spacgit statue-around;
+          justify-content: spacgit statue-around;
 }
 
 .footer__container-col1 .col-redes .row .btn-facebook {
