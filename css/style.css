@@ -31,15 +31,30 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-shadow: 1px 1px 4px #000;
           box-shadow: 1px 1px 4px #000;
   z-index: 2;
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #591A75 !important;
+  border-radius: 2px;
+  text-decoration: none;
+  padding: 2px;
+  margin-inline: 18px;
+}
+
+.nav-link:hover {
+  color: #FFC90E !important;
+}
+
+.nav-link:active {
+  color: blueviolet !important;
 }
 
 .logo {
@@ -72,29 +87,13 @@ header {
       justify-content: space-around;
 }
 
-.main-nav__item {
+.nav-item {
   display: inline-block;
   position: relative;
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #591A75;
   margin: 0;
-}
-
-.main-nav__item a {
-  color: #591A75;
-  border-radius: 2px;
-  text-decoration: none;
-  padding: 2px;
-  margin-inline: 18px;
-}
-
-.main-nav__item a:hover {
-  color: #FFC90E;
-}
-
-.main-nav__item a:active {
-  color: blueviolet;
 }
 
 .submenu {
@@ -202,7 +201,8 @@ ul li:hover ul {
 
 #beneficios {
   background-color: #400040;
-  padding: 30px 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -1014,17 +1014,16 @@ address {
 
 /*Media Query*/
 @media (max-width: 750px) {
-  .main-nav {
+  .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar img {
+    width: 200px;
   }
   .grillas {
     display: -webkit-box;
@@ -1107,13 +1106,7 @@ address {
     margin-left: 100px;
   }
   .access-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    margin-left: 0px;
   }
   #beneficios {
     display: -webkit-box;

@@ -15,12 +15,33 @@
       position:fixed; 
       display: flex;
       flex-direction: row;
-      justify-content:space-between;
-      align-items: center;
+      
+      
       box-shadow: 1px 1px 4px #000;
       z-index: 2;
-         }
+      }
     
+
+  .bg-light {
+     background-color: white !important;
+     }
+ .nav-link {
+      text-decoration: none;
+      color: #591A75 !important;
+      border-radius: 2px;
+      text-decoration: none;
+      padding: 2px;
+      margin-inline: 18px;
+  
+      &:hover {
+        color: #FFC90E !important;
+      }
+  
+      &:active {
+        color: blueviolet !important;
+      }
+    }
+     
   .logo {
     width: 300px;
     display: flex;
@@ -38,29 +59,14 @@
     justify-content: space-around;
   }
   
-  .main-nav__item {
+  .nav-item {
     display: inline-block;
     position: relative;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #591A75;
     margin: 0;
-  
-    a {
-      color: #591A75;
-      border-radius: 2px;
-      text-decoration: none;
-      padding: 2px;
-      margin-inline: 18px;
-  
-      &:hover {
-        color: #FFC90E;
-      }
-  
-      &:active {
-        color: blueviolet;
-      }
-    }
+      
   }
   
   .submenu {
@@ -86,6 +92,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    
   }
   
   .access-nav__inicioSesion {
