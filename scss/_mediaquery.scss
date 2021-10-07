@@ -1,12 +1,36 @@
  /*Media Query*/
   
  @media (max-width: 750px) {
-     .navbar {
-     display:flex;
-     justify-content: space-between;
+     .navbar-toggler{
+     margin: 0;
+     }
+     .navbar{
      img {
        width: 200px;
+       margin-right: 0;
      }
+    }
+    .nav-link {
+      font-size: 15px !important;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      z-index: 3;
+    }
+    
+    .access-nav {
+     margin-left: 0px;
+     img {
+       width: 28px;
+     }
+   }
+     .access-nav__inicioSesion {
+       padding: 6px 8px;
+    }
+    .access-nav__pruebaGratis {
+      padding: 6px 8px;
     }
    
     .grillas {
@@ -22,11 +46,7 @@
       flex-direction: column;
       align-items: center;
     }
-    #beneficios {
-     display: flex;
-     flex-direction: column;
-     align-items:flex-end;
-    }
+    
     #screenBeneficios {
      display: flex;
      flex-direction: column;
@@ -36,33 +56,20 @@
      margin-left: auto;
      margin-right: auto;
    }
-   header {
-     display: flex;
-     flex-direction: column;
-     z-index: 3;
-   }
-   .caja-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 100px;
-    
-   }
-   .access-nav {
-    margin-left: 0px;
-   
-   }
+  
+
    #beneficios {
      display: flex;
      flex-direction: column;
      text-align: center;
      justify-content: space-around;
+     font-size: 13px;
    }
    .parrafo-beneficios {
      z-index: 2;
-     
+     font-size: 15px;
    }
-  
+   
    .footer__container {
       display: flex;
       flex-direction: column;
