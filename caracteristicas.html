@@ -7,11 +7,20 @@
     <meta name="description" content="Descubre las principales características que puedes utilizar para tu empresa y que nos resaltan de nuestros competidores">
     <meta name="keywords"  content="caracteristicas software, modulos, servicios, factron, operaciones, punto de venta, contabilidad, planillas, costos">
     <title>Características de Software Assistant</title>
+    <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--CSS PROPIO-->
     <link rel="stylesheet" href="./css/style.css">
-     
+     <!--Animate AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
+  <!-- Sticky Element -->
+  <a href="https://api.whatsapp.com/send?phone=51910605701&text=Hola,%20me%20gustaría%20obtener%20información" target="_blank">
+    <img class="footer__button animate__animated animate__heartBeat animate__delay-3s float__logoWhats--sticky " src="./pictures/whatsappColor.png" alt="LogoWhatsApp"/>
+  </a>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html"><img  width=220" src="https://reivenapps.files.wordpress.com/2021/09/assistant-logo-3.png" alt="logo assistant"></a>
@@ -52,48 +61,74 @@
             <img width=30" src="https://reivenapps.files.wordpress.com/2021/09/phone.png" alt="phone"></a>
         </div>  
         <button class="access-nav__inicioSesion"><a href="./login.html">Iniciar Sesión</a></button>
-        <button class="access-nav__pruebaGratis"><a href="#">Pruebalo Gratis</a></button>
+        <button class="access-nav__pruebaGratis"><a href="./registrate.html">Pruebalo Gratis</a></button>
       </div>
     </div> 
     </nav>
-    
     </header>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Características</li>
-            </ol>
-          </nav>
-                  
-        <aside class="contenedorservicio">
-            <div class="tituloServicio"><h1>Módulos de Servicio</h1></div>
-         <!-- flexbox -->
-	    <div class="modulos-serv">
-            <figure class="modulos-serv__item"> <img src="https://www.starsoft.com.pe/imgs/home/Icon_Home_Products03.png" alt="factron">
-                <figcaption>
-                    <h4><a href="#"><strong>FACTRON</strong></a></h4>
-                </figcaption>
-            </figure>
-            <figure class="modulos-serv__item"> <img src="https://www.starsoft.com.pe/imgs/home/Icon_Home_Products04.png" alt="conta">
-                <figcaption>
-                    <h4><a href="#"><strong>CONTABILIDAD</strong></a></h4>
-                </figcaption>
-            </figure>
-            <figure class="modulos-serv__item"> <img src="https://www.starsoft.com.pe/imgs/home/Icon_Home_Products06.png" alt="planilla">
-                <figcaption>
-                    <h4><a href="#"><strong>PLANILLAS</strong></a></h4>
-                </figcaption>
-            </figure>
-            <figure class="modulos-serv__item"> <img src="https://www.starsoft.com.pe/imgs/home/Icon_Home_Products05.png" alt="costos">
-                <figcaption>
-                    <h4><a href="#"><strong>COSTOS</strong></a></h4>
-                </figcaption>
-            </figure>
-	    </div>
-    </aside>  
-         
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                         
+    <div id="caracteristicas"> 
+      <!--id="titulo1"-->
+    <p id="titulo-1" class="animate__animated animate__rubberBand">EL SOFTWARE ADECUADO PARA TU EMPRESA</p>
+    <!--id="subtitulo1"-->
+    <p id="subtitulo-1" class="animate__animated animate__pulse">Características de ASSISTANT PLANILLAS</p>
+    </div>
+    <div class="container-caracteristicas">
+      <!--BLLOQUE 1-->
+      <div class="row justify-content-around">
+      <div class="caraBox col-lg-2 col-md-5 col-sm-10" data-aos="fade-up"
+   data-aos-duration="2000"><img width="120" class="caraIconos" src="./pictures/caracteristicas/Control de Asistencia.png" alt="Tareo dinamico">
+        <p class="caraTitulos">TAREO DINAMICO</p>
+      <p class="caraParrafo">Mediante el registro, carga<br>de .xls o interface con<br>Reloj Marcador</p></div>
+        <div class="caraBox col-lg-2 col-md-5 col-sm-10" data-aos="fade-up"
+        data-aos-duration="2000"><img width="120" class="caraIconos" src="./pictures/caracteristicas/Control de Cuenta.png" alt="Control de cuenta">
+        <p class="caraTitulos">CONTROL DE CUENTA</p>
+        <p class="caraParrafo">Adelantos y Préstamos de<br>tus trabajadores siempre<br>controlados y actualizados</p></div>
+        <div class="caraBox col-lg-2 col-md-5 col-sm-10" data-aos="fade-up"
+        data-aos-duration="2000"><img width="120" class="caraIconos" src="./pictures/caracteristicas/Archivo txt pago.png" alt="archivo bancario">
+        <p class="caraTitulos">ARCHIVO BANCARIO</p>
+        <p class="caraParrafo">Genera archivo de pago<br>importar a cualquier<br>banca por internet</p></div>
+        <div class="caraBox col-lg-2 col-md-5 col-sm-10" data-aos="fade-up"
+        data-aos-duration="2000"><img width="120" class="caraIconos" src="./pictures/caracteristicas/declaraciones2.png" alt="declaraciones">
+        <p class="caraTitulos">DECLARACIONES</p>
+        <p class="caraParrafo">Exporta todos los datos<br>para AFPnet, PDT PLAME,<br>T-Registro y VivaEssalud</p></div>
+      </div>
+    </div>
+
+    <!--BLOQUE 2-->
+    <div class="container-caracteristicas">
+      <div class="row justify-content-around">
+      <div class="caraBox-boletas col-lg-2 col-md-5 col-sm-10" data-aos="fade-up"
+   data-aos-duration="2000"><img width="120" class="caraIconos" src=".//pictures/caracteristicas/Boletas Digitales.png" alt="Boletas digitales">
+        <p class="caraTitulos">BOLETAS DIGITALES</p>
+      <p class="caraParrafo">Genera y envía boletas<br>electrónicas con firma<br>digitalizada</p></div>
+        <div class="caraBox-hg col-lg-2 col-md-5 col-sm-10" data-aos="fade-up"
+        data-aos-duration="2000"><img width="120" class="caraIconos" src="./pictures/caracteristicas/historias.png" alt="historias">
+        <p class="caraTitulos">HISTORIAS</p>
+        <p class="caraParrafo">Lleva el Histórico de tus<br>trabajadores en su legajo<br>digital y sus múltiples<br>reportes de consulta</p></div>
+        <div class="caraBox-hg col-lg-2 col-md-5 col-sm-10" data-aos="fade-up"
+        data-aos-duration="2000"><img width="120" class="caraIconos" src="./pictures/caracteristicas/Gestion.png" alt="gestion">
+        <p class="caraTitulos">GESTION</p>
+        <p class="caraParrafo">Ten almacenado tu<br>organigrama, control de<br>funciones y cargos, RIT,<br>MAPRO, SST, etc</p></div>
+        <div class="caraBox col-lg-2 col-md-5 col-sm-10" data-aos="fade-up"
+        data-aos-duration="2000"><img width="120" class="caraIconos" src="./pictures/caracteristicas/Notificaciones Digitales.png" alt="notificaciones">
+        <p class="caraTitulos">NOTIFICACIONES</p>
+        <p class="caraParrafo">Envía mensajes masivos a<br>sus trabajadores para dar<br>información importante</p></div>
+       </div>
+      </div>
+    
+   <!--Scripts de bootstrap-->      
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!--Script de AOS-->    
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+<!--Script de Animate.Css-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+</script>
 </body>
 </html>

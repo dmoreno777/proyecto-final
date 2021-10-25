@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 * {
   padding: 0px;
   margin-top: 0px;
@@ -181,8 +182,21 @@ ul li:hover ul {
   color: #ABAA00;
 }
 
-.breadcrumb {
-  margin-top: 110px !important;
+.float__logoWhats--sticky {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  width: 50px;
+  position: absolute;
+  position: fixed;
+  z-index: 3;
+  top: 83%;
+  left: 94%;
+}
+
+h3 {
+  text-align: center;
 }
 
 /*Carousel*/
@@ -268,9 +282,9 @@ ul li:hover ul {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
+  font-weight: bolder;
   color: #591A75;
   background-image: url(https://reivenapps.files.wordpress.com/2021/09/4907157.jpg);
-  text-shadow: 0.5px 2px #313131;
 }
 
 /*Flexbox Footer*/
@@ -367,6 +381,21 @@ footer {
 
 .footer__container-col1 .col-redes .row .btn-instagram {
   margin-bottom: 10px;
+}
+
+.footer__container-col1 .col-redes .row .btn-facebook:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.footer__container-col1 .col-redes .row .btn-instagram:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.footer__container-col1 .col-redes .row .btn-twitter:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .footer__container-col1 .col-redes .text-redes {
@@ -488,12 +517,59 @@ footer {
 }
 
 /*Pagina de Caracteristicas*/
-.contenedorservicio {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  background-color: #D9D9D9;
-  border: 4px solid #7D3C98;
+#caracteristicas {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 150px;
+}
+
+#titulo-1 {
+  text-align: center;
+  font-size: 200%;
+  color: #591A75;
+  font-weight: bold;
+}
+
+#subtitulo-1 {
+  color: #ECB400;
+  font-size: 150%;
+  text-align: center;
+}
+
+.container-caracteristicas {
+  padding: 30px 0px;
+  z-index: 1;
+}
+
+.caraIconos {
+  width: 100px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.caraTitulos {
+  color: #616161;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
   padding-top: 20px;
+  font-weight: bolder;
+  word-spacing: 1px;
+  letter-spacing: 0.5px;
+}
+
+.caraBox {
+  border: #D9D9D9 10px solid;
+  border-radius: 5px;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,27 +578,23 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: -webkit-gradient(linear, left top, right top, from(purple), to(yellow));
-  background-image: linear-gradient(to right, purple, yellow);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.tituloServicio {
-  margin-left: 30px;
-  color: #d6a916;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.caraParrafo {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.modulos-serv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.modulos-serv .modulos-serv__item {
-  background-color: white;
+.caraBox-boletas {
+  border: #D9D9D9 10px solid;
+  border-radius: 5px;
+  padding-top: 25px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,180 +602,328 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.modulos-serv .modulos-serv__item figcaption h4 a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-decoration: none;
-  color: #800180;
-  border-radius: 8px;
-}
-
-h3 {
-  font-style: unset;
-  color: red;
-  text-align: center;
-  letter-spacing: 2px;
-  word-spacing: 10px;
-}
-
-/*Grids Capacitación*/
-.grillas {
-  padding-top: 0px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 10px;
-  -ms-grid-columns: [col1-start] 400px [col2-start] 400px [col3-start] 400px [col3-end];
-      grid-template-columns: [col1-start] 400px [col2-start] 400px [col3-start] 400px [col3-end];
-  -ms-grid-rows: [row1-start] auto [row2-start] auto [row2-end];
-      grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
-  color: #444;
-  margin: 20px 30px 30px 30px;
-}
-
-.box {
-  background-color: beige;
-  color: #FFC90E;
-  text-shadow: 4px 4px 4px black;
-  border-radius: 8px;
-  padding: 100px;
-  font-size: 150%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.a {
-  grid-column: col1-start / col3-start;
-  grid-row: row1-start;
-  background-image: url(https://t3.ftcdn.net/jpg/00/84/71/02/360_F_84710252_ZrquscCqzOdXW00o6wMebF1TUp3wjkq9.jpg);
-}
-
-.b {
-  grid-column: col3-start;
-  grid-row: row1-start / row2-end;
-  background-image: url(https://reivenapps.files.wordpress.com/2021/09/economist.jpg);
-}
-
-.c {
-  grid-column: col1-start;
-  grid-row: row2-start;
-  background-image: url(https://www.icaec.org/files/siteSettings/pics/Slider/img_3.jpg);
-}
-
-.d {
-  grid-column: col2-start;
-  grid-row: row2-start;
-  background-image: url(https://reivenapps.files.wordpress.com/2021/09/calculadora.jpg);
-}
-
-/*Operaciones*/
-.cajascolores {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 30px 20px 30px 20px;
 }
 
-.cajascolores .box_uno {
-  background-color: #4285F4;
-  width: 300px;
-  height: 400px;
-  -webkit-box-shadow: 4px 1px 4px #000;
-          box-shadow: 4px 1px 4px #000;
-  z-index: 6;
-  text-align: end;
-  font-family: "Ubuntu", sans-serif;
-  padding-right: 10px;
-  padding-top: 10px;
+.caraBox-hg {
+  border: #D9D9D9 10px solid;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.cajascolores .box_dos {
-  background-color: #33D374;
-  width: 200px;
-  height: 360px;
-  -webkit-box-shadow: 4px 1px 4px #000;
-          box-shadow: 4px 1px 4px #000;
-  z-index: 5;
-  text-align: end;
-  font-family: "Ubuntu", sans-serif;
-  padding-right: 10px;
-  padding-top: 10px;
+.border2 {
+  border: solid #591A75 2px;
+  padding-bottom: 10px;
+  border-radius: 0px;
+  margin-top: 110px;
+  margin-bottom: 20px;
 }
 
-.cajascolores .box_tres {
-  background-color: #5D88AB;
-  width: 240px;
-  height: 320px;
-  -webkit-box-shadow: 4px 1px 4px #000;
-          box-shadow: 4px 1px 4px #000;
-  z-index: 4;
-  text-align: end;
-  font-family: "Ubuntu", sans-serif;
-  padding-right: 10px;
-  padding-top: 10px;
+.zonamorada1 {
+  background-color: #591A75;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+  padding-left: 15%;
+  padding-bottom: 20px;
 }
 
-.cajascolores .box_cuatro {
-  background-color: #FFC90E;
-  width: 200px;
-  height: 280px;
-  -webkit-box-shadow: 4px 1px 4px #000;
-          box-shadow: 4px 1px 4px #000;
-  z-index: 3;
-  text-align: end;
-  font-family: "Ubuntu", sans-serif;
-  padding-right: 10px;
-  padding-top: 10px;
+.txc-amar {
+  color: #FFCC00;
+  line-height: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
 }
 
-.cajascolores .box_cinco {
-  background-color: #4D1A73;
-  width: 206.89655px;
-  height: 240px;
-  -webkit-box-shadow: 4px 1px 4px #000;
-          box-shadow: 4px 1px 4px #000;
-  z-index: 2;
-  text-align: end;
-  font-family: "Ubuntu", sans-serif;
-  padding-right: 10px;
-  padding-top: 10px;
+.subtitle {
+  color: #FFFFFF;
+  line-height: 26px;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
 }
 
-.cajascolores .box_seis {
-  background-color: #D9D9D9;
-  width: 200px;
-  height: 200px;
-  -webkit-box-shadow: 4px 1px 4px #000;
-          box-shadow: 4px 1px 4px #000;
-  z-index: 1;
-  text-align: end;
-  font-family: "Ubuntu", sans-serif;
-  padding-right: 10px;
-  padding-top: 10px;
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: table;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-indent: initial;
+  border-color: grey;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+th {
+  font-size: 13px;
+}
+
+.img-responsive {
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.text-capa {
+  text-align: center;
 }
 
 /*Página de Precios*/
+/*Cards de precios*/
+:root {
+  --clr-gray-light: #d7dfe2;
+  --clr-gray-lightmed: #a2a9ab;
+  --clr-gray-med: #616b74;
+  --clr-gray-dark: #414b56;
+  --clr-primary: #591A75;
+}
+
+.html-precios {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wave-top {
+  display: block;
+  position: fixed;
+  left: 0;
+}
+
+.wave-bottom {
+  display: block;
+  position: fixed;
+  left: 0;
+}
+
+.path1 {
+  fill: var(--clr-primary);
+}
+
+.wave-top {
+  top: 0;
+}
+
+.wave-bottom {
+  bottom: 0;
+}
+
+.body-precios {
+  color: var(--clr-gray-med);
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  -webkit-box-shadow: 0px 2px 10px var(--clr-gray-lightmed);
+          box-shadow: 0px 2px 10px var(--clr-gray-lightmed);
+  background: white;
+  border-radius: 0.25rem;
+  position: relative;
+  min-width: 350px;
+  margin: 1rem;
+  text-align: center;
+  -webkit-transition: 500ms all ease-in-out;
+  transition: 500ms all ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0px 2px 20px var(--clr-gray-lightmed);
+          box-shadow: 0px 2px 20px var(--clr-gray-lightmed);
+}
+
+.card-banner {
+  border-bottom: 1px solid var(--clr-gray-light);
+  padding: 4rem 0 2rem;
+}
+
+.card-banner .plan-tag {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  background: #9964C4;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 0.25rem;
+}
+
+.card-banner .plan-tag2 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  background: #DDB300;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 0.25rem;
+}
+
+.card-banner .highlight {
+  color: white;
+  background: var(--clr-primary);
+}
+
+.card-banner .plan-price {
+  display: inline-block;
+}
+
+.card-banner .price {
+  font-size: 4.5rem;
+  position: relative;
+  margin-bottom: -0.5rem;
+  color: var(--clr-gray-dark);
+}
+
+.card-banner .price::before {
+  content: "$";
+  display: inline-block;
+  font-size: 2rem;
+  top: 0.8rem;
+  position: absolute;
+  text-align: left;
+  left: -1.5rem;
+}
+
+.card-banner .price-month {
+  font-size: 0.9rem;
+}
+
+.card-body {
+  margin: 2rem 0;
+}
+
+.card-body .plan-name {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.card-body .plan-feature-list {
+  margin: 2rem 4rem;
+  list-style: none;
+}
+
+.card-body .plan-feature {
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.card-body .plan-feature::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.3rem;
+  content: "\f058";
+  color: var(--clr-gray-lightmed);
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.btn {
+  width: 250px;
+  color: var(--clr-primary);
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid var(--clr-primary);
+  background: white;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  -webkit-transition: 500ms all ease-in-out;
+  transition: 500ms all ease-in-out;
+}
+
+.card:hover .btn {
+  background: var(--clr-primary);
+  color: white;
+}
+
+/* Cuadro de Precios*/
 .tituloPrecios {
-  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 40px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 55px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 200px;
+  position: relative;
+  z-index: 1;
+  font-weight: bolder;
+}
+
+.tituloCuadroplanes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 80px;
+  position: relative;
+  z-index: 1;
 }
 
 .contenedor-pr {
@@ -718,6 +938,7 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Ubuntu", sans-serif;
+  position: relative;
 }
 
 .cajamensual {
@@ -822,8 +1043,9 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 8px 50px;
-  margin: 20px 10px;
+  padding: 10px 20px;
+  margin: 18px 10px;
+  font-size: 14px;
 }
 
 .cajaunica2 {
@@ -845,6 +1067,58 @@ h3 {
   margin: 20px 10px;
 }
 
+.sec-title {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  z-index: 2;
+}
+
+.services-section-two {
+  position: relative;
+  padding: 120px 0 60px;
+  display: block;
+}
+
+.fa-audible {
+  color: #D9D9D9;
+  font-size: 40px;
+}
+
+.fa-chart-bar {
+  color: #D9D9D9;
+  font-size: 50px;
+}
+
+.fa-users {
+  color: #D9D9D9;
+  font-size: 40px;
+}
+
+.auto-container {
+  margin-bottom: 40px;
+}
+
+.dual-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.actualizacion {
+  padding: 0;
+}
+
 /*Página Contacto*/
 .contact-body {
   background: #4D1A73;
@@ -857,6 +1131,7 @@ h3 {
   text-align: center;
   font-size: 3em;
   padding: 1em;
+  margin-top: 120px;
 }
 
 .contact-title span {
@@ -884,6 +1159,7 @@ h3 {
 .contact-form h3 {
   color: #FFC90E;
   margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .contact-form form {
@@ -925,7 +1201,7 @@ h3 {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background: #d63031;
+  background: #27AE60;
   color: #fff;
   -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
@@ -959,7 +1235,7 @@ h3 {
 .body-login {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background: url(https://reivenapps.files.wordpress.com/2021/09/mesa-de-trabajo-1.jpg);
+  background: url(https://reivenapps.files.wordpress.com/2021/10/inicio-de-sesion.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -984,7 +1260,7 @@ h3 {
 .formulario-login {
   background-color: white;
   width: 450px;
-  margin-top: 60px;
+  margin-top: 160px;
   margin-left: 86px;
   padding: 3px;
   border-radius: 8px;
@@ -1101,6 +1377,147 @@ h3 {
   padding-top: 30px;
 }
 
+/*custom font*/
+.body-registro {
+  background: #c741a7;
+  background: radial-gradient(circle, #c741a7 4%, #4d1a73 100%);
+  font-family: montserrat, arial, verdana;
+}
+
+/*form styles*/
+#msform {
+  width: 420px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+  margin-top: 150px;
+}
+
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0%;
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+/*inputs*/
+#msform input, #msform textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 13px;
+}
+
+/*buttons*/
+#msform .action-button {
+  width: 100px;
+  background: #48003F;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+  -webkit-box-shadow: 0 0 0 2px white, 0 0 0 3px #48003F;
+          box-shadow: 0 0 0 2px white, 0 0 0 3px #48003F;
+}
+
+/*headings*/
+.fs-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #2C3E50;
+  margin-bottom: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+}
+
+.fs-subtitle {
+  font-weight: normal;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/*progressbar*/
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+}
+
+#progressbar li {
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 9px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+
+#progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
+  color: #333;
+  background: white;
+  border-radius: 3px;
+  margin: 0 auto 5px auto;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1;
+  /*put it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+  /*connector not needed before the first step*/
+  content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before, #progressbar li.active:after {
+  background: #FFC90E;
+  color: white;
+}
+
 /*Media Query*/
 @media (max-width: 750px) {
   .navbar-toggler {
@@ -1134,6 +1551,9 @@ h3 {
   }
   .access-nav__pruebaGratis {
     padding: 6px 8px;
+  }
+  .carousel-inner img {
+    margin-top: 76px;
   }
   .grillas {
     display: -webkit-box;
@@ -1213,6 +1633,57 @@ h3 {
   }
   .footer__container-col3 {
     margin: 40px 10px 10px 10px;
+  }
+  .float__logoWhats--sticky {
+    left: 85%;
+  }
+  .cara-box {
+    margin-bottom: 30px;
+  }
+  .tituloPrecios {
+    font-size: 32px;
+  }
+  .tituloCuadroplanes {
+    font-size: 23px;
+  }
+  .logo-white img {
+    margin-left: 60px;
+    margin-bottom: 30px;
+    width: 250px;
+  }
+  #msform {
+    width: 350px;
+  }
+  .formulario-login {
+    width: 350px;
+  }
+  .formulario-login .titulo-login {
+    padding-top: 10px;
+    font-size: 30px;
+  }
+  .formulario-login .contenedor-login {
+    padding-bottom: 8px;
+  }
+  .zonamorada1 {
+    padding-left: 10%;
+  }
+  .contact-title {
+    font-size: 40px;
+  }
+  #titulo-1 {
+    font-size: 150%;
+  }
+  #subtitulo-1 {
+    font-size: 120%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .txc-rojor {
+    display: none;
+  }
+  .dispo {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,7 +10,9 @@
       <title>Assistant Software</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      
+      <link rel="preload" as="image" href="./pictures/whatsappColor.png" />
+      <!-- Animate CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
       
       <!--Animate.CSS-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -23,6 +25,10 @@
       <link rel="stylesheet" href="css/style.css">
       </head>
     <body>
+      <!-- Sticky Element -->
+    <a href="https://api.whatsapp.com/send?phone=51910605701&text=Hola,%20me%20gustaría%20obtener%20información" target="_blank">
+      <img class="footer__button animate__animated animate__heartBeat animate__delay-3s float__logoWhats--sticky " src="./pictures/whatsappColor.png" alt="LogoWhatsApp"/>
+    </a>
       <header>
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <a class="navbar-brand" href="index.html"><img  width=220" src="https://reivenapps.files.wordpress.com/2021/09/assistant-logo-3.png" alt="logo assistant"></a>
@@ -58,12 +64,12 @@
                 </li>
             </ul>
             <div class="access-nav">
-              <div class="access-nav__phone">
-                  <a href="https://api.whatsapp.com/send?phone=51995834012&text=Hola,%20me%20gustaría%20obtener%20información">
+              <div class="topbar">
+                  <a href="tel:998568798" class="btnllamar" onclick="return(navigator.userAgent.match(/Android | iPhone | movile /i)) != null;">
                   <img width=30" src="https://reivenapps.files.wordpress.com/2021/09/phone.png" alt="phone"></a>
               </div>  
               <button class="access-nav__inicioSesion"><a href="./login.html">Iniciar Sesión</a></button>
-              <button class="access-nav__pruebaGratis"><a href="#">Pruebalo Gratis</a></button>
+              <button class="access-nav__pruebaGratis"><a href="./registrate.html">Pruebalo Gratis</a></button>
             </div>
           </div> 
           </nav>
@@ -130,7 +136,7 @@
       </div>
     
     <footer>
-           
+       
         <div class="footer__container">
             <div class="footer__container-col1">
               <h2>Redes Sociales</h2>
@@ -179,6 +185,7 @@
         </div>
       </div> 
       </div>
+    
       <div class="footer__down">
         <div class="footer__down-copyright">
             © 2021 Todos los Derechos Reservados | <a href="#">Asistant</a>

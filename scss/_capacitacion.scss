@@ -1,131 +1,67 @@
-/*Grids Capacitación*/
 
 
-.grillas {
-    padding-top: 0px;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: [col1-start] 400px  [col2-start] 400px  [col3-start] 400px [col3-end];
-    grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
-    color: #444;
-    margin: 20px 30px 30px 30px;
+  .border2 {
+    border: solid $letra-morada 2px;
+    padding-bottom: 10px;
+    border-radius: 0px;
+    margin-top: 110px;
+    margin-bottom: 20px;
+}
+  .zonamorada1 {
+    background-color: $letra-morada;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-bottom: 20px;
   }
-  
-  .box {
-    background-color:beige;
-    color: #FFC90E;
-    text-shadow: 4px 4px 4px black;
-    border-radius: 8px;
-    padding: 100px;
-    font-size: 150%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  
+  .txc-amar{
+    color: #FFCC00;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
   }
-  
-  .a {
-    grid-column: col1-start / col3-start;
-    grid-row: row1-start ;
-    background-image: url(https://t3.ftcdn.net/jpg/00/84/71/02/360_F_84710252_ZrquscCqzOdXW00o6wMebF1TUp3wjkq9.jpg);
-  }
-  .b {
-    grid-column: col3-start ;
-    grid-row: row1-start / row2-end;
-    background-image: url(https://reivenapps.files.wordpress.com/2021/09/economist.jpg);
-  }
-  .c {
-    grid-column: col1-start;
-    grid-row: row2-start ;
-    background-image: url(https://www.icaec.org/files/siteSettings/pics/Slider/img_3.jpg);
-  }
-  .d {
-    grid-column: col2-start ;
-    grid-row: row2-start ;
-    background-image: url(https://reivenapps.files.wordpress.com/2021/09/calculadora.jpg);
-  }
-
-/*Operaciones*/
-$alto-box: 200px;
-$ancho: 600px;
-$blue: #4285F4;
-$green: #33D374;
-$gris: #5D88AB;
-$amarillo: #FFC90E;
-$lila: #4D1A73;
-$humo: #D9D9D9;
-$ubuntu: 'Ubuntu', sans-serif;
-
-
-.cajascolores{
-display: flex;
-flex-direction: row;
-align-items: center;
-margin: 30px 20px 30px 20px;
-
-.box_uno {
-    background-color: $blue;
-    width: $ancho/2; 
-    height: $alto-box *2;
-    box-shadow: 4px 1px 4px #000;
-    z-index: 6;
-    text-align: end;
-    font-family: $ubuntu;
-    padding-right: 10px;
-    padding-top: 10px;
+.subtitle {
+  color: #FFFFFF;
+  line-height: 26px;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
 }
 
-.box_dos {
-    background-color: $green;
-    width: $ancho/3; 
-    height: ($alto-box *2)-40;
-    box-shadow: 4px 1px 4px #000;
-    z-index: 5;
-    text-align: end;
-    font-family: $ubuntu;
-    padding-right: 10px;
-    padding-top: 10px;
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: table;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-color: grey;
+
 }
-.box_tres {
-  background-color: $gris;
-  width: $ancho/2.5; 
-  height: ($alto-box *2)-80;
-  box-shadow: 4px 1px 4px #000;
-  z-index: 4;
-  text-align: end;
-  font-family: $ubuntu;
-  padding-right: 10px;
-  padding-top: 10px;
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
 }
-.box_cuatro {
-  background-color: $amarillo;
-  width: $ancho/3; 
-  height: ($alto-box *2)-120;
-  box-shadow: 4px 1px 4px #000;
-  z-index: 3;
-  text-align: end;
-  font-family: $ubuntu;
-  padding-right: 10px;
-  padding-top: 10px;
+th {
+  font-size: 13px;
 }
-.box_cinco {
-  background-color: $lila;
-  width: $ancho/2.9; 
-  height: ($alto-box *2)-160;
-  box-shadow: 4px 1px 4px #000;
-  z-index: 2;
-  text-align: end;
-  font-family: $ubuntu;
-  padding-right: 10px;
-  padding-top: 10px;
+
+.img-responsive {
+  margin-left: 40px;
+  margin-top: 30px;
 }
-.box_seis {
-  background-color: $humo;
-  width: $ancho/3;
-  height: ($alto-box *2)-200;
-  box-shadow: 4px 1px 4px #000;
-  z-index: 1;
-  text-align: end;
-  font-family: $ubuntu;
-  padding-right: 10px;
-  padding-top: 10px;
-}
+.text-capa {
+  text-align: center;
 }

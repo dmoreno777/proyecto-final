@@ -131,7 +131,19 @@
   .access-nav__pruebaGratis a:hover {
     color: #ABAA00;
    }
-
-   .breadcrumb {
-     margin-top: 110px !important;
-   }
+   .float__logoWhats--sticky {
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+    width: 50px;
+    position: absolute;
+    position: fixed;
+    z-index: 3;
+    top: 83%;
+    left: 94%;
+  }
+  
+  h3 {
+    text-align: center; 
+    }
